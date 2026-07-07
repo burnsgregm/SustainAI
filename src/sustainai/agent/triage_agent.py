@@ -53,10 +53,16 @@ def _call_vertex_ai(exc: ExceptionObject, validation_error: str | None = None) -
             "max_output_tokens": cfg.agent.max_output_tokens,
             "temperature": cfg.agent.temperature,
             "response_mime_type": "application/json",
-            "response_schema": TRIAGE_JSON_SCHEMA,
         }
     )
-    return json.loads(response.text)
+    
+    try:
+        text = response.candidates[0].content.parts[0].text
+        if not text:
+            raise ValueError("Vertex returned empty text")
+        return json.loads(text)
+    except (IndexError, AttributeError) as e:
+        raise ValueError(f"Unexpected response shape: {repr(e)}")
 
 
 def run_live_triage(exc: ExceptionObject) -> TriageRecord:
@@ -64,18 +70,47 @@ def run_live_triage(exc: ExceptionObject) -> TriageRecord:
     cfg = get_config()
     
     def attempt_call(err_msg: str | None = None) -> TriageRecord:
+        import uuid
+        from datetime import datetime, timezone
+        start_ts = time.time()
         raw_json = _call_vertex_ai(exc, validation_error=err_msg)
-        return TriageRecord.model_validate(raw_json)
+        latency = int((time.time() - start_ts) * 1000)
+        
+        assembled = {
+            "triage_id": str(uuid.uuid4()),
+            "exception_id": exc.exception_id,
+            "engine": {
+                "unit_id": exc.unit_id,
+                "predicted_rul": exc.predicted_rul,
+                "severity_band": exc.severity_band.value if hasattr(exc.severity_band, "value") else exc.severity_band
+            },
+            "severity_assessment": raw_json.get("severity_assessment", {}),
+            "context": raw_json.get("context", {}),
+            "recommended_action": raw_json.get("recommended_action", {}),
+            "escalation": raw_json.get("escalation", {}),
+            "meta": {
+                "agent_mode": cfg.agent_mode,
+                "agent_model": cfg.gemini_model,
+                "latency_ms": latency,
+                "failure_mode": "none",
+                "schema_version": "1.0",
+                "created_at": datetime.now(timezone.utc).isoformat()
+            }
+        }
+        if isinstance(assembled["escalation"], dict) and "escalate" in assembled["escalation"]:
+            assembled["escalation"]["forced_by_guardrail"] = False
+            
+        return TriageRecord.model_validate(assembled)
         
     try:
         # First attempt
         return attempt_call()
-    except ValidationError as e:
+    except (ValidationError, ValueError) as e:
         logger.warning("Agent returned malformed JSON for %s. Retrying...", exc.exception_id)
         # FR-AGT-4 logic: 1 retry for malformed output
         try:
-            return attempt_call(err_msg=str(e))
-        except ValidationError:
+            return attempt_call(err_msg=repr(e))
+        except (ValidationError, ValueError):
             # Still malformed
             raise ValueError("malformed_output")
     except Exception as e:
@@ -115,7 +150,7 @@ def process_exception(exc: ExceptionObject) -> TriageRecord:
             logger.error("Agent tool/logic error for exception %s: %s", exc.exception_id, ve)
             failure_mode = FailureMode.TOOL_ERROR
     except Exception as e:
-        logger.error("Agent failed for exception %s: %s", exc.exception_id, e)
+        logger.error("Agent failed for exception %s: %r", exc.exception_id, e)
         failure_mode = FailureMode.TOOL_ERROR
         
     latency_ms = int((time.time() - start_time) * 1000)

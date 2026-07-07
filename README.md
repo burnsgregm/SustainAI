@@ -19,7 +19,8 @@ Measured by the evaluation harness on the 100-engine FD001 test set. This eval r
 | NASA scoring function | 763 |
 | Severity band accuracy | 0.7 |
 | Agent triage | 33 exceptions, 0.0 failure rate, 100% schema validity |
-| Agent latency | stub-mode p95 9 ms; live measurement pending AC-4 |
+| Agent latency | live p50 8,839 ms, p95 11,995 ms (eval-3477d2bf, target 15,000 ms: PASS); stub-mode p95 9 ms |
+| Agent triage (live) | 33 exceptions processed, 0.0 failure rate, 100% schema validity |
 
 The three missed engines and the one false alarm are itemized in [misses.json](outputs_evidence/misses.json) and [false_alarms.json](outputs_evidence/false_alarms.json). An honest miss list is a feature of this project, not an admission.
 

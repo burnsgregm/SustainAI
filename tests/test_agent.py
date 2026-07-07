@@ -137,6 +137,99 @@ def test_t8_failsafes_on_agent_failure(monkeypatch):
     
 
 # =============================================================================
+# T-13: Vertex Response Parsing and Contract Integrity
+# =============================================================================
+def test_t13_vertex_response_parsing(monkeypatch):
+    from sustainai.agent.triage_agent import run_live_triage
+    from sustainai.config import SustainAIConfig
+    import types
+    import json
+    
+    def mock_cfg():
+        cfg = SustainAIConfig()
+        cfg.agent_mode = "live"
+        return cfg
+    monkeypatch.setattr("sustainai.agent.triage_agent.get_config", mock_cfg)
+    
+    exc = ExceptionObject(
+        exception_id="test_parse",
+        run_id="test_run",
+        unit_id=1,
+        predicted_rul=5.0,
+        severity_band=SeverityBand.CRITICAL,
+        thresholds_used=ThresholdsUsed(critical_max=25, warning_max=50, watch_max=75),
+        model_id="m1",
+        created_at=datetime.now(timezone.utc)
+    )
+    
+    # 1. Well-formed JSON text test (Model outputs only 4 blocks now)
+    valid_record_dict = {
+        "severity_assessment": {"agrees_with_band": True, "assessed_band": "critical", "reasoning": "high risk"},
+        "context": {
+            "sensor_trend_summary": "none",
+            "degradation_summary": "none",
+            "fleet_position": "none",
+            "tool_calls_made": 0
+        },
+        "recommended_action": {
+            "action_type": "schedule_inspection",
+            "horizon_cycles": 10,
+            "details": "none"
+        },
+        "escalation": {"escalate": True, "rationale": "critical"}
+    }
+    
+    class MockPart:
+        def __init__(self, text):
+            self.text = text
+    class MockContent:
+        def __init__(self, text):
+            self.parts = [MockPart(text)]
+    class MockCandidate:
+        def __init__(self, text):
+            self.content = MockContent(text)
+    class MockResponse:
+        def __init__(self, text):
+            self.candidates = [MockCandidate(text)]
+            
+    call_count = 0
+            
+    class MockGenerativeModel:
+        def __init__(self, model_name):
+            pass
+        def generate_content(self, prompt, generation_config=None):
+            nonlocal call_count
+            call_count += 1
+            if "INVALID_RESPONSE" in prompt:
+                # Return empty or bad text
+                return MockResponse("{bad_json")
+            return MockResponse(json.dumps(valid_record_dict))
+            
+    # Mock vertexai module to prevent import errors if not installed in stub environment
+    mock_vertexai = types.ModuleType("vertexai")
+    mock_vertexai.generative_models = types.ModuleType("generative_models")
+    mock_vertexai.generative_models.GenerativeModel = MockGenerativeModel
+    import sys
+    sys.modules["vertexai"] = mock_vertexai
+    sys.modules["vertexai.generative_models"] = mock_vertexai.generative_models
+
+    # Test valid
+    rec = run_live_triage(exc)
+    assert rec.engine.severity_band == "critical"
+    
+    # Test invalid routes to malformed logic, raises ValueError("malformed_output")
+    call_count = 0
+    exc.exception_id = "INVALID_RESPONSE" # Pass signal via ID to mock
+    monkeypatch.setattr("sustainai.agent.triage_agent.SYSTEM_PROMPT", "{exception_id}") # Make prompt the ID
+    try:
+        run_live_triage(exc)
+        assert False, "Should raise malformed_output"
+    except ValueError as e:
+        assert str(e) == "malformed_output"
+    # Call count should be 2 because run_live_triage retries once
+    assert call_count == 2
+
+# =============================================================================
 # T-9: Tools cannot access label fields
 # =============================================================================
 def test_t9_tool_context_label_isolation(monkeypatch, tmp_path):

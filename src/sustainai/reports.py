@@ -115,7 +115,9 @@ def write_triage_artifacts(out_dir: Path, records: list[TriageRecord], summary: 
         rmd += f"**Exception ID:** {r.exception_id}\n\n"
         
         rmd += "## Severity Assessment\n"
-        rmd += f"{r.severity_assessment}\n\n"
+        rmd += f"**Agrees with Band:** {r.severity_assessment.agrees_with_band}\n"
+        rmd += f"**Assessed Band:** {r.severity_assessment.assessed_band.value}\n"
+        rmd += f"**Reasoning:** {r.severity_assessment.reasoning}\n\n"
         
         rmd += "## Context Summary\n"
         rmd += f"**Sensor Trends:** {r.context.sensor_trend_summary}\n"

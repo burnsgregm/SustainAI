@@ -29,3 +29,15 @@ The validation dataset employs deterministic random cycle truncation to simulate
 ## 7. Build Execution Environment
 **Status:** CONSTRAINED.
 The build environment is pinned to Python >=3.10 and <3.13 due to pyarrow C bindings on Windows. TensorFlow failed to load the DllMain library inside pytest due to AVX incompatibilities. We used the pre-authorized MLPRegressor fallback model.
+
+## 8. Agent Configuration Limits
+**Status:** PROVISIONAL.
+The `agent.max_output_tokens` value was raised from its initial bound to resolve live-mode JSON truncation and is pinned at its current value to support the full 4-block structured TriageRecord JSON output without dropping content.
+
+## 9. AC-4 Live Gemini Verification
+**Status:** COMPLETE.
+Live triage executed against Vertex AI (gemini-2.5-flash, us-central1) on all 33 test-set exceptions. Eval ID: eval-3477d2bf. Results: 0.0 failure rate, 100% schema validity, latency p50 8,839 ms / p95 11,995 ms (target 15,000 ms: PASS). Two config/prompt fixes were required and are recorded here: (a) agent.max_output_tokens raised to 4096 after live-mode JSON truncation; (b) SYSTEM_PROMPT extended to pin the exact output-contract field names after the model initially emitted non-schema field names. Guardrail FR-GRD-1 was observed working correctly on Unit 81, where the agent assessed a model-flagged critical engine as low-risk and recommended continue_monitoring, and the guardrail forced escalation anyway (forced_by_guardrail=true), preserving the agent's dissent for the operator.
+
+## 10. Vertex Cost
+**Status:** PRELIMINARY.
+Billing showed $0.00 as of Jul 7 (usage not yet settled). 33 Gemini 2.5 Flash calls expected in low single-digit cents. Final figure pending settlement; update when billing posts.

@@ -14,7 +14,7 @@ severity:  # thresholds on PREDICTED RUL, in cycles
 
 agent:
   timeout_seconds: 30
-  max_output_tokens: 1024
+  max_output_tokens: 4096
   temperature: 0.2
   max_retries_on_malformed: 1
   max_tool_calls_per_exception: 6
