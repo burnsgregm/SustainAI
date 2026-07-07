@@ -1,0 +1,23 @@
+[
+  {
+    "unit_id": 37,
+    "true_rul": 21.0,
+    "predicted_rul": 51.87461729502911,
+    "true_band": "critical",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 41,
+    "true_rul": 18.0,
+    "predicted_rul": 60.58551448917058,
+    "true_band": "critical",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 61,
+    "true_rul": 21.0,
+    "predicted_rul": 37.23009957486678,
+    "true_band": "critical",
+    "predicted_band": "warning"
+  }
+]

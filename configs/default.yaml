@@ -1,0 +1,23 @@
+data:
+  rul_cap: 125  # PROVISIONAL; standard C-MAPSS practice
+  sensor_drop_variance_threshold: 1.0e-6  # relative variance below this => drop
+  rolling_window: 20  # PROVISIONAL; trailing window W cycles
+
+split:
+  val_fraction: 0.2  # by UNIT, never by row
+  seed: 42
+
+severity:  # thresholds on PREDICTED RUL, in cycles
+  critical_max: 25   # PROVISIONAL; tuned once on validation per FR-EXC-3
+  warning_max: 60    # PROVISIONAL
+  watch_max: 100     # PROVISIONAL
+
+agent:
+  timeout_seconds: 30
+  max_output_tokens: 1024
+  temperature: 0.2
+  max_retries_on_malformed: 1
+  max_tool_calls_per_exception: 6
+
+harness:
+  latency_percentiles: [50, 95]

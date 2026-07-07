@@ -1,0 +1,54 @@
+{
+  "eval_id": "eval-24243a5a",
+  "run_id": "run-afc69869",
+  "mode": "stub",
+  "wall_clock_time_seconds": 2.29,
+  "total_test_engines": 100,
+  "prediction_metrics": {
+    "rmse": 17.61712762032285,
+    "mae": 13.273923529499799,
+    "nasa_score": 763.1352085620421,
+    "band_accuracy": 0.7,
+    "critical_confusion": {
+      "tp": 16,
+      "fp": 1,
+      "fn": 3,
+      "tn": 80
+    },
+    "critical_precision": 0.9411764705882353,
+    "critical_recall": 0.8421052631578947,
+    "critical_f1": 0.8888888888888888
+  },
+  "agent_integrity": {
+    "failure_rate": 0.0,
+    "latency_p50_ms": 4,
+    "latency_p95_ms": 9,
+    "total_processed": 33
+  },
+  "target_comparison": {
+    "targets": {
+      "critical_recall_min": 0.8,
+      "critical_precision_min": 0.65,
+      "agent_latency_p95_max_ms": 15000,
+      "agent_schema_validity_min": 1.0
+    },
+    "results": {
+      "critical_recall": {
+        "value": 0.842,
+        "status": "PASS"
+      },
+      "critical_precision": {
+        "value": 0.941,
+        "status": "PASS"
+      },
+      "agent_latency_p95_ms": {
+        "value": 9,
+        "status": "PASS (stub mode; live measurement pending AC-4)"
+      },
+      "agent_schema_validity": {
+        "value": 1.0,
+        "status": "PASS"
+      }
+    }
+  }
+}

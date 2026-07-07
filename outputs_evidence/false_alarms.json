@@ -1,0 +1,9 @@
+[
+  {
+    "unit_id": 52,
+    "true_rul": 29.0,
+    "predicted_rul": 20.88598497178745,
+    "true_band": "warning",
+    "predicted_band": "critical"
+  }
+]

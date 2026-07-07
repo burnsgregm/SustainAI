@@ -1,0 +1,702 @@
+[
+  {
+    "unit_id": 1,
+    "true_rul": 112.0,
+    "predicted_rul": 118.8100793210852,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 2,
+    "true_rul": 98.0,
+    "predicted_rul": 121.09436206605679,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 3,
+    "true_rul": 69.0,
+    "predicted_rul": 43.56715670397968,
+    "true_band": "watch",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 4,
+    "true_rul": 82.0,
+    "predicted_rul": 87.95200387168175,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 5,
+    "true_rul": 91.0,
+    "predicted_rul": 101.66027324521234,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 6,
+    "true_rul": 93.0,
+    "predicted_rul": 111.54658011364022,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 7,
+    "true_rul": 91.0,
+    "predicted_rul": 97.42720965476094,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 8,
+    "true_rul": 95.0,
+    "predicted_rul": 105.74948592937331,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 9,
+    "true_rul": 111.0,
+    "predicted_rul": 108.86288869770583,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 10,
+    "true_rul": 96.0,
+    "predicted_rul": 97.91383048847463,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 11,
+    "true_rul": 97.0,
+    "predicted_rul": 99.20769065584841,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 12,
+    "true_rul": 124.0,
+    "predicted_rul": 98.88007300474055,
+    "true_band": "normal",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 13,
+    "true_rul": 95.0,
+    "predicted_rul": 90.14719621797215,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 14,
+    "true_rul": 107.0,
+    "predicted_rul": 112.43423096455402,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 15,
+    "true_rul": 83.0,
+    "predicted_rul": 110.11409949255581,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 16,
+    "true_rul": 84.0,
+    "predicted_rul": 108.74534239596237,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 17,
+    "true_rul": 50.0,
+    "predicted_rul": 43.212415887012114,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 18,
+    "true_rul": 28.0,
+    "predicted_rul": 80.7553848109476,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 19,
+    "true_rul": 87.0,
+    "predicted_rul": 95.15535492087783,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 20,
+    "true_rul": 16.0,
+    "predicted_rul": 12.303000418018678,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 21,
+    "true_rul": 57.0,
+    "predicted_rul": 62.76599968648856,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 22,
+    "true_rul": 111.0,
+    "predicted_rul": 120.91399399896635,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 23,
+    "true_rul": 113.0,
+    "predicted_rul": 118.28625319718478,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 24,
+    "true_rul": 20.0,
+    "predicted_rul": 19.201520752272213,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 25,
+    "true_rul": 145.0,
+    "predicted_rul": 117.49507015496212,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 26,
+    "true_rul": 119.0,
+    "predicted_rul": 109.15257980439637,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 27,
+    "true_rul": 66.0,
+    "predicted_rul": 111.24940209910889,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 28,
+    "true_rul": 97.0,
+    "predicted_rul": 113.73827061105042,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 29,
+    "true_rul": 90.0,
+    "predicted_rul": 90.43280805336208,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 30,
+    "true_rul": 115.0,
+    "predicted_rul": 99.81817537938507,
+    "true_band": "normal",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 31,
+    "true_rul": 8.0,
+    "predicted_rul": 17.712162626587766,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 32,
+    "true_rul": 48.0,
+    "predicted_rul": 49.87066843862027,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 33,
+    "true_rul": 106.0,
+    "predicted_rul": 119.52866252931472,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 34,
+    "true_rul": 7.0,
+    "predicted_rul": 4.860348942138388,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 35,
+    "true_rul": 11.0,
+    "predicted_rul": 12.716747392995506,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 36,
+    "true_rul": 19.0,
+    "predicted_rul": 20.882610940677335,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 37,
+    "true_rul": 21.0,
+    "predicted_rul": 51.87461729502911,
+    "true_band": "critical",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 38,
+    "true_rul": 50.0,
+    "predicted_rul": 44.64453337616445,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 39,
+    "true_rul": 142.0,
+    "predicted_rul": 115.81487280006237,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 40,
+    "true_rul": 28.0,
+    "predicted_rul": 35.19732420724945,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 41,
+    "true_rul": 18.0,
+    "predicted_rul": 60.58551448917058,
+    "true_band": "critical",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 42,
+    "true_rul": 10.0,
+    "predicted_rul": 16.6993548926749,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 43,
+    "true_rul": 59.0,
+    "predicted_rul": 79.62129807642046,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 44,
+    "true_rul": 109.0,
+    "predicted_rul": 101.5010319152843,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 45,
+    "true_rul": 114.0,
+    "predicted_rul": 61.32717435449318,
+    "true_band": "normal",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 46,
+    "true_rul": 47.0,
+    "predicted_rul": 43.84234873065752,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 47,
+    "true_rul": 135.0,
+    "predicted_rul": 110.65366930049876,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 48,
+    "true_rul": 92.0,
+    "predicted_rul": 110.61370397390507,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 49,
+    "true_rul": 21.0,
+    "predicted_rul": 12.10487760506788,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 50,
+    "true_rul": 79.0,
+    "predicted_rul": 106.94544372062403,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 51,
+    "true_rul": 114.0,
+    "predicted_rul": 117.64481503963448,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 52,
+    "true_rul": 29.0,
+    "predicted_rul": 20.88598497178745,
+    "true_band": "warning",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 53,
+    "true_rul": 26.0,
+    "predicted_rul": 26.58788668551152,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 54,
+    "true_rul": 97.0,
+    "predicted_rul": 120.53425364531658,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 55,
+    "true_rul": 137.0,
+    "predicted_rul": 115.81524311982409,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 56,
+    "true_rul": 15.0,
+    "predicted_rul": 15.44221892533267,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 57,
+    "true_rul": 103.0,
+    "predicted_rul": 113.96581789591278,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 58,
+    "true_rul": 37.0,
+    "predicted_rul": 48.44697921245744,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 59,
+    "true_rul": 114.0,
+    "predicted_rul": 123.35023447645898,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 60,
+    "true_rul": 100.0,
+    "predicted_rul": 118.51383733247187,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 61,
+    "true_rul": 21.0,
+    "predicted_rul": 37.23009957486678,
+    "true_band": "critical",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 62,
+    "true_rul": 54.0,
+    "predicted_rul": 43.80078895709921,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 63,
+    "true_rul": 72.0,
+    "predicted_rul": 89.24622625428808,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 64,
+    "true_rul": 28.0,
+    "predicted_rul": 34.69039491905023,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 65,
+    "true_rul": 128.0,
+    "predicted_rul": 119.75683294791284,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 66,
+    "true_rul": 14.0,
+    "predicted_rul": 15.217688857186292,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 67,
+    "true_rul": 77.0,
+    "predicted_rul": 92.47376776327555,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 68,
+    "true_rul": 8.0,
+    "predicted_rul": 10.338412422278953,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 69,
+    "true_rul": 121.0,
+    "predicted_rul": 118.52445070710866,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 70,
+    "true_rul": 94.0,
+    "predicted_rul": 104.26395324329674,
+    "true_band": "watch",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 71,
+    "true_rul": 118.0,
+    "predicted_rul": 105.96901529058124,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 72,
+    "true_rul": 50.0,
+    "predicted_rul": 91.93213482960286,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 73,
+    "true_rul": 131.0,
+    "predicted_rul": 116.1417314271052,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 74,
+    "true_rul": 126.0,
+    "predicted_rul": 104.60636743126432,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 75,
+    "true_rul": 113.0,
+    "predicted_rul": 88.49093302070727,
+    "true_band": "normal",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 76,
+    "true_rul": 10.0,
+    "predicted_rul": 10.33136747707499,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 77,
+    "true_rul": 34.0,
+    "predicted_rul": 47.27387853181994,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 78,
+    "true_rul": 107.0,
+    "predicted_rul": 121.68264322723452,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 79,
+    "true_rul": 63.0,
+    "predicted_rul": 85.19680383787046,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 80,
+    "true_rul": 90.0,
+    "predicted_rul": 95.95919606006431,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 81,
+    "true_rul": 8.0,
+    "predicted_rul": 6.9790607558964926,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 82,
+    "true_rul": 9.0,
+    "predicted_rul": 9.324823578782084,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 83,
+    "true_rul": 137.0,
+    "predicted_rul": 114.71087660022933,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 84,
+    "true_rul": 58.0,
+    "predicted_rul": 72.52166863248824,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 85,
+    "true_rul": 118.0,
+    "predicted_rul": 119.62473362219544,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 86,
+    "true_rul": 89.0,
+    "predicted_rul": 98.78624643099381,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 87,
+    "true_rul": 116.0,
+    "predicted_rul": 108.56421948401918,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 88,
+    "true_rul": 115.0,
+    "predicted_rul": 125.0,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 89,
+    "true_rul": 136.0,
+    "predicted_rul": 116.57676873986372,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 90,
+    "true_rul": 28.0,
+    "predicted_rul": 36.59778977083532,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 91,
+    "true_rul": 38.0,
+    "predicted_rul": 27.569210553333914,
+    "true_band": "warning",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 92,
+    "true_rul": 20.0,
+    "predicted_rul": 14.195301798112375,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  },
+  {
+    "unit_id": 93,
+    "true_rul": 85.0,
+    "predicted_rul": 43.60350149484232,
+    "true_band": "watch",
+    "predicted_band": "warning"
+  },
+  {
+    "unit_id": 94,
+    "true_rul": 55.0,
+    "predicted_rul": 79.43760785279984,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 95,
+    "true_rul": 128.0,
+    "predicted_rul": 114.83615011344246,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 96,
+    "true_rul": 137.0,
+    "predicted_rul": 118.63182181438913,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 97,
+    "true_rul": 82.0,
+    "predicted_rul": 83.16215302519589,
+    "true_band": "watch",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 98,
+    "true_rul": 59.0,
+    "predicted_rul": 74.86717535538187,
+    "true_band": "warning",
+    "predicted_band": "watch"
+  },
+  {
+    "unit_id": 99,
+    "true_rul": 117.0,
+    "predicted_rul": 125.0,
+    "true_band": "normal",
+    "predicted_band": "normal"
+  },
+  {
+    "unit_id": 100,
+    "true_rul": 20.0,
+    "predicted_rul": 18.406026417829523,
+    "true_band": "critical",
+    "predicted_band": "critical"
+  }
+]

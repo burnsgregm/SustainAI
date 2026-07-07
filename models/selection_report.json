@@ -1,0 +1,26 @@
+{
+  "baseline_metrics": {
+    "nasa_score": 518.3145155290384,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "tn": 85
+  },
+  "champion_metrics": {
+    "nasa_score": 664.2757914224943,
+    "precision": 1.0,
+    "recall": 0.8666666666666667,
+    "tp": 13,
+    "fp": 0,
+    "fn": 2,
+    "tn": 85
+  },
+  "selected_model": "baseline_hgbr_v1",
+  "reasons": {
+    "recall_beats": false,
+    "precision_eq_beat": true,
+    "nasa_no_worse": false
+  }
+}

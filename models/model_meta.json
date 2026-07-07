@@ -1,0 +1,8 @@
+{
+  "model_id": "baseline_hgbr_v1",
+  "feature_version": "fc31f386",
+  "seed": 42,
+  "training_timestamp": "2026-07-07T04:09:59.696789+00:00",
+  "model_type": "sklearn",
+  "model_file": "baseline.pkl"
+}

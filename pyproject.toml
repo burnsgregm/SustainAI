@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sustainai"
+version = "0.1.0"
+description = "SustainAI Predictive Sustainment"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+authors = [{name = "Gregory Burns"}]
+
+dependencies = [
+    "pydantic>=2.5,<3",
+    "pyyaml>=6.0,<7",
+    "pandas>=2.1,<3",
+    "pyarrow>=14.0,<18",
+    "numpy>=1.26,<2",
+    "scikit-learn>=1.3,<2",
+    "xgboost>=2.0,<3",
+    "fastapi>=0.104,<1",
+    "uvicorn[standard]>=0.24,<1",
+    "httpx>=0.25,<1",
+    "google-cloud-aiplatform>=1.38,<2",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4,<9",
+    "pytest-asyncio>=0.23,<1",
+    "ruff>=0.1,<1",
+]
+keras = [
+    "tensorflow>=2.15,<3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

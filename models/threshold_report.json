@@ -1,0 +1,264 @@
+{
+  "val_parquet_md5": "4ba479307cf24a7df867881ae4bafa66",
+  "val_parquet_mtime": 1783397357.5650318,
+  "true_rul_distribution": {
+    "min": 0,
+    "max": 125,
+    "q25": 48,
+    "q50": 92,
+    "q75": 125,
+    "count_at_or_below_critical25": 15,
+    "count_at_or_below_warningmax": 36
+  },
+  "provisional_critical_max": 25,
+  "tuned_critical_max": 25,
+  "tuning_results": [
+    {
+      "threshold": 10,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 11,
+      "cost": 20,
+      "fn": 2,
+      "fp": 0
+    },
+    {
+      "threshold": 12,
+      "cost": 20,
+      "fn": 2,
+      "fp": 0
+    },
+    {
+      "threshold": 13,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 14,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 15,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 16,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 17,
+      "cost": 60,
+      "fn": 6,
+      "fp": 0
+    },
+    {
+      "threshold": 18,
+      "cost": 60,
+      "fn": 6,
+      "fp": 0
+    },
+    {
+      "threshold": 19,
+      "cost": 60,
+      "fn": 6,
+      "fp": 0
+    },
+    {
+      "threshold": 20,
+      "cost": 40,
+      "fn": 4,
+      "fp": 0
+    },
+    {
+      "threshold": 21,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 22,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 23,
+      "cost": 30,
+      "fn": 3,
+      "fp": 0
+    },
+    {
+      "threshold": 24,
+      "cost": 20,
+      "fn": 2,
+      "fp": 0
+    },
+    {
+      "threshold": 25,
+      "cost": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    {
+      "threshold": 26,
+      "cost": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    {
+      "threshold": 27,
+      "cost": 10,
+      "fn": 1,
+      "fp": 0
+    },
+    {
+      "threshold": 28,
+      "cost": 10,
+      "fn": 1,
+      "fp": 0
+    },
+    {
+      "threshold": 29,
+      "cost": 10,
+      "fn": 1,
+      "fp": 0
+    },
+    {
+      "threshold": 30,
+      "cost": 10,
+      "fn": 1,
+      "fp": 0
+    },
+    {
+      "threshold": 31,
+      "cost": 11,
+      "fn": 1,
+      "fp": 1
+    },
+    {
+      "threshold": 32,
+      "cost": 11,
+      "fn": 1,
+      "fp": 1
+    },
+    {
+      "threshold": 33,
+      "cost": 21,
+      "fn": 2,
+      "fp": 1
+    },
+    {
+      "threshold": 34,
+      "cost": 21,
+      "fn": 2,
+      "fp": 1
+    },
+    {
+      "threshold": 35,
+      "cost": 20,
+      "fn": 2,
+      "fp": 0
+    },
+    {
+      "threshold": 36,
+      "cost": 31,
+      "fn": 3,
+      "fp": 1
+    },
+    {
+      "threshold": 37,
+      "cost": 31,
+      "fn": 3,
+      "fp": 1
+    },
+    {
+      "threshold": 38,
+      "cost": 31,
+      "fn": 3,
+      "fp": 1
+    },
+    {
+      "threshold": 39,
+      "cost": 32,
+      "fn": 3,
+      "fp": 2
+    },
+    {
+      "threshold": 40,
+      "cost": 32,
+      "fn": 3,
+      "fp": 2
+    },
+    {
+      "threshold": 41,
+      "cost": 33,
+      "fn": 3,
+      "fp": 3
+    },
+    {
+      "threshold": 42,
+      "cost": 33,
+      "fn": 3,
+      "fp": 3
+    },
+    {
+      "threshold": 43,
+      "cost": 43,
+      "fn": 4,
+      "fp": 3
+    },
+    {
+      "threshold": 44,
+      "cost": 63,
+      "fn": 6,
+      "fp": 3
+    },
+    {
+      "threshold": 45,
+      "cost": 63,
+      "fn": 6,
+      "fp": 3
+    },
+    {
+      "threshold": 46,
+      "cost": 71,
+      "fn": 7,
+      "fp": 1
+    },
+    {
+      "threshold": 47,
+      "cost": 72,
+      "fn": 7,
+      "fp": 2
+    },
+    {
+      "threshold": 48,
+      "cost": 73,
+      "fn": 7,
+      "fp": 3
+    },
+    {
+      "threshold": 49,
+      "cost": 82,
+      "fn": 8,
+      "fp": 2
+    },
+    {
+      "threshold": 50,
+      "cost": 72,
+      "fn": 7,
+      "fp": 2
+    }
+  ],
+  "best_cost": 0
+}
